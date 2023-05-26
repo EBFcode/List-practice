@@ -107,6 +107,11 @@ main {
     border-radius: var(--radius);
 }
 
+.card-to-do:hover {
+    background-color: var(--rojiso-opaco);
+
+}
+
 .card-to-do > span:nth-child(2) {
     color: var(--rojiso-opaco);
 }
@@ -125,4 +130,14 @@ main {
 
 #add-form-to-do {
     width: 100%;
+}
+
+#add-form-to-do > input {
+    width: 15rem;
+    height: 3rem;
+}
+
+#add-form-to-do > button {
+    height: 3rem;
+    margin: 0;
 }

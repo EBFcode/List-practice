@@ -86,6 +86,7 @@ header {
 /* ===== Main */
 
 main {
+    position: relative;
     padding: var(--container-padding);
 }
 
@@ -108,4 +109,20 @@ main {
 
 .card-to-do > span:nth-child(2) {
     color: var(--rojiso-opaco);
+}
+
+.add-To-Do {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1.25rem;
+
+    background-color: var(--amarrilloClaro);
+    top: 10;
+    padding: var(--container-padding);
+    
+    border-radius: var(--radius);
+}
+
+#add-form-to-do {
+    width: 100%;
 }

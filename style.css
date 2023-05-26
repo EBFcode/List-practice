@@ -1,0 +1,111 @@
+
+:root {
+    /* Colors */
+    --azulOscuro: #1A2B45;
+    --azulClaro: #324F7A;
+    --amarrilloClaro: #FFB553;
+    --rojiso: #FF9181;
+    --rojiso-opaco: #A6594D;
+
+    /* Padding */
+    --normal-padding: 1rem 1.25rem;
+    --container-padding: 1.25rem;
+
+
+    /* Border radius */
+    --radius: 1.6rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: var(--azulOscuro);
+    
+    padding: 3rem 1.25rem 1.25rem 1.25rem;
+}
+
+.frase {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.frase > p:nth-child(1){
+    color: white;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0px;
+
+}
+
+.frase > p:nth-child(2){
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.racha {
+    background-color: var(--azulClaro);
+    color: white;
+    font-weight: bold;
+
+    padding: var(--normal-padding);
+    border-radius: var(--radius);
+}
+
+.racha > span {
+    text-shadow: 0px 4px 15px #FFB553;
+    
+}
+
+.coins {
+    background-color: var(--azulClaro);
+    color: white;
+    font-weight: bold;
+
+    padding: var(--normal-padding);
+    border-radius: var(--radius);
+
+}
+
+.coins > span {
+    text-shadow: 0px 4px 15px #FFB553;
+}
+
+/* ===== Main */
+
+main {
+    padding: var(--container-padding);
+}
+
+.container-cards {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-to-do {
+    list-style: none;
+    margin-bottom: 1rem;
+    background-color: var(--rojiso);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: var(--normal-padding);
+    border-radius: var(--radius);
+}
+
+.card-to-do > span:nth-child(2) {
+    color: var(--rojiso-opaco);
+}
